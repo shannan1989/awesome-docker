@@ -1,9 +1,9 @@
 name: HomeAssistant
 services:
   homeassistant:
-    image: homeassistant/home-assistant:latest
+    image: ghcr.io/home-assistant/home-assistant:stable
     container_name: homeassistant
-    network_mode: host
+    #network_mode: host
     ports:
       - 8123:8123
     environment:
