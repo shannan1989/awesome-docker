@@ -1,7 +1,7 @@
 name: HomeAssistant
 services:
   homeassistant:
-    image: ghcr.io/home-assistant/home-assistant:stable
+    image: docker.1ms.run/homeassistant/home-assistant:stable
     container_name: homeassistant
     #network_mode: host
     ports:
