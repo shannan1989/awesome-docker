@@ -1,6 +1,6 @@
 services:
   xiaomusic:
-    image: hanxi/xiaomusic
+    image: docker.1ms.run/hanxi/xiaomusic
     container_name: xiaomusic
     restart: unless-stopped
     ports:
