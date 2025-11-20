@@ -1,0 +1,11 @@
+services:
+  website:
+    image: docker.1ms.run/guovern/iptv-api:latest
+    ports:
+      - "8000:8000"
+    environment:
+      APP_PORT: 8000
+    volumes:
+      - ./config:/iptv-api/config
+      - ./output:/iptv-api/output
+    restart: always
