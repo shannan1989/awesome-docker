@@ -1,0 +1,10 @@
+services:
+  calibre-web:
+    image: docker.1ms.run/linuxserver/calibre-web:latest
+    container_name: calibre-web
+    ports:
+      - 8083:8083
+    volumes:
+      - ./books:/books
+      - ./config:/config
+    restart: unless-stopped
